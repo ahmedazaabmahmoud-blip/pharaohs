@@ -1,0 +1,900 @@
+/* =========================================================
+   SERVICES PAGE
+   Pharaohs Integrated Business
+   ========================================================= */
+
+
+/* =========================================================
+   SERVICES HERO
+   ========================================================= */
+
+.services-page-hero {
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #071521;
+}
+
+
+/* =========================================================
+   HERO BACKGROUND
+   ========================================================= */
+
+.services-page-hero-background {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    background-image:
+        url("../images/hero/hero-main.webp");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+   ========================================================= */
+
+.services-page-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 21, 33, 0.95) 0%,
+            rgba(7, 21, 33, 0.82) 50%,
+            rgba(7, 21, 33, 0.45) 100%
+        );
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.services-page-hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    padding-top: 80px;
+
+    padding-bottom: 80px;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.services-page-hero-content {
+    max-width: 800px;
+}
+
+
+/* =========================================================
+   HERO LABEL
+   ========================================================= */
+
+.services-page-hero-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #c49a52;
+
+    font-family: var(--font-main);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.services-page-hero-content h1 {
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.8rem, 6vw, 5rem);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+/* =========================================================
+   HERO TITLE GOLD
+   ========================================================= */
+
+.services-page-hero-content h1 span {
+    display: block;
+
+    color: #c49a52;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.services-page-hero-content p {
+    max-width: 680px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-family: var(--font-main);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   SERVICES INTRO
+   ========================================================= */
+
+.services-intro {
+    background: var(--white);
+}
+
+.services-intro .section-heading {
+    margin-bottom: 55px;
+}
+
+
+/* =========================================================
+   SERVICES GRID
+   ========================================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.service-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 470px;
+
+    padding: 38px 34px 34px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    text-decoration: none;
+
+    box-shadow: var(--shadow-sm);
+
+    overflow: hidden;
+
+    transition: var(--transition);
+}
+
+
+/* =========================================================
+   CARD GOLD TOP LINE
+   ========================================================= */
+
+.service-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: var(--secondary);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: var(--transition);
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(196, 154, 82, 0.5);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.service-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================================
+   SERVICE NUMBER
+   ========================================================= */
+
+.service-number {
+    font-family: var(--font-heading);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   SERVICE LABEL
+   ========================================================= */
+
+.service-label {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   SERVICE TITLE
+   ========================================================= */
+
+.service-card h3 {
+    margin: 0 0 18px;
+
+    font-family: var(--font-heading);
+
+    font-size: 26px;
+
+    line-height: 1.25;
+
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   SERVICE DESCRIPTION
+   ========================================================= */
+
+.service-card > p {
+    margin: 0 0 25px;
+
+    font-family: var(--font-main);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.service-card ul {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin: 0 0 28px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.service-card li {
+    position: relative;
+
+    padding-left: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: var(--text);
+}
+
+
+.service-card li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 8px;
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: var(--secondary);
+}
+
+
+/* =========================================================
+   SERVICE LINK
+   ========================================================= */
+
+.service-link {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: auto;
+
+    padding-top: 22px;
+
+    border-top: 1px solid var(--border);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: var(--primary);
+
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+
+.service-link span {
+    font-size: 20px;
+
+    color: var(--secondary);
+
+    transition: var(--transition);
+}
+
+
+.service-card:hover .service-link {
+    color: var(--secondary);
+}
+
+
+.service-card:hover .service-link span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   HOW WE SUPPORT
+   ========================================================= */
+
+.services-support {
+    background: var(--bg-light);
+}
+
+
+.services-support .section-heading {
+    margin-bottom: 55px;
+}
+
+
+/* =========================================================
+   SUPPORT GRID
+   ========================================================= */
+
+.support-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   SUPPORT ITEM
+   ========================================================= */
+
+.support-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 22px;
+
+    padding: 30px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    transition: var(--transition);
+}
+
+
+.support-item:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-sm);
+
+    border-color: rgba(196, 154, 82, 0.45);
+}
+
+
+/* =========================================================
+   SUPPORT NUMBER
+   ========================================================= */
+
+.support-item > span {
+    flex: 0 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    font-family: var(--font-heading);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   SUPPORT TITLE
+   ========================================================= */
+
+.support-item h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-heading);
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   SUPPORT TEXT
+   ========================================================= */
+
+.support-item p {
+    margin: 0;
+
+    font-family: var(--font-main);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   SERVICES CTA
+   ========================================================= */
+
+.services-cta {
+    position: relative;
+
+    padding: 100px 0;
+
+    background: var(--primary);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CTA DECORATION
+   ========================================================= */
+
+.services-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    top: -230px;
+
+    right: -160px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(196, 154, 82, 0.22);
+}
+
+
+.services-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    left: -180px;
+
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(196, 154, 82, 0.16);
+}
+
+
+/* =========================================================
+   CTA CONTENT
+   ========================================================= */
+
+.services-cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CTA LABEL
+   ========================================================= */
+
+.services-cta-content > span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   CTA TITLE
+   ========================================================= */
+
+.services-cta-content h2 {
+    margin: 0 0 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(36px, 4vw, 54px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    color: var(--white);
+}
+
+
+.services-cta-content h2 strong {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   CTA TEXT
+   ========================================================= */
+
+.services-cta-content > p {
+    max-width: 680px;
+
+    margin: 0 auto 32px;
+
+    font-family: var(--font-main);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================================
+   CTA ACTIONS
+   ========================================================= */
+
+.services-cta-actions {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .services-page-hero {
+        min-height: 500px;
+    }
+
+    .services-page-hero-container {
+        padding-top: 70px;
+
+        padding-bottom: 70px;
+    }
+
+    .services-page-hero-content h1 {
+        font-size: 46px;
+    }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .services-page-hero {
+        min-height: 500px;
+    }
+
+    .services-page-hero-container {
+        padding-top: 65px;
+
+        padding-bottom: 65px;
+    }
+
+    .services-page-hero-content h1 {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+
+        letter-spacing: -1px;
+    }
+
+    .services-page-hero-content p {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .services-page-hero-background {
+        background-position: center;
+    }
+
+    .services-page-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(7, 21, 33, 0.95) 0%,
+                rgba(7, 21, 33, 0.82) 55%,
+                rgba(7, 21, 33, 0.55) 100%
+            );
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+
+        padding: 32px 28px;
+    }
+
+    .support-item {
+        padding: 25px 22px;
+    }
+
+    .services-cta {
+        padding: 75px 0;
+    }
+
+    .services-cta-content h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .services-page-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .services-page-hero-content p {
+        font-size: 14px;
+    }
+
+    .service-card h3 {
+        font-size: 23px;
+    }
+
+    .support-item {
+        gap: 15px;
+    }
+
+    .support-item > span {
+        width: 42px;
+
+        height: 42px;
+    }
+
+}
+
+
+/* =========================================================
+   SERVICES EMPTY STATE
+   ========================================================= */
+
+.services-empty {
+    width: 100%;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.services-empty h3 {
+    margin: 0 0 12px;
+
+    color: var(--primary);
+
+    font-family: var(--font-heading);
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.services-empty p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+

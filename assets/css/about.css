@@ -1,0 +1,1056 @@
+
+/* =========================================================
+   ABOUT PAGE
+   Pharaohs Integrated Business
+   ========================================================= */
+
+
+/* =========================================================
+   ABOUT HERO
+   ========================================================= */
+
+.inner-hero {
+    position: relative;
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: var(--primary);
+}
+
+.inner-hero-background {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    background-image: url("../images/about/about-main.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: scale(1.02);
+}
+
+.inner-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 21, 33, 0.95) 0%,
+            rgba(7, 21, 33, 0.82) 42%,
+            rgba(7, 21, 33, 0.48) 75%,
+            rgba(7, 21, 33, 0.28) 100%
+        );
+}
+
+.inner-hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.inner-hero-content {
+    max-width: 760px;
+
+    padding: 110px 0 90px;
+}
+
+.inner-hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--secondary);
+}
+
+.inner-hero-label::before {
+    content: "";
+
+    width: 35px;
+    height: 2px;
+
+    background: var(--secondary);
+}
+
+.inner-hero h1 {
+    margin: 0 0 25px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.08;
+    font-weight: 800;
+
+    color: var(--white);
+}
+
+.inner-hero h1 span {
+    display: block;
+
+    color: var(--secondary);
+}
+
+.inner-hero p {
+    max-width: 680px;
+
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* =========================================================
+   WHO WE ARE
+   ========================================================= */
+
+.about-page-intro {
+    background: var(--white);
+}
+
+.about-page-grid {
+    display: grid;
+
+    grid-template-columns: 1.05fr 0.95fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.about-page-content {
+    max-width: 650px;
+}
+
+.about-page-content h2 {
+    margin: 14px 0 25px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.about-page-content h2 span {
+    display: block;
+
+    color: var(--secondary);
+}
+
+.about-page-content p {
+    margin: 0 0 18px;
+
+    font-size: 16px;
+    line-height: 1.85;
+
+    color: var(--text-light);
+}
+
+.about-page-content .about-page-lead {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+
+    color: var(--text);
+}
+
+.about-page-visual {
+    position: relative;
+
+    padding: 15px 15px 45px 0;
+}
+
+.about-page-image {
+    position: relative;
+
+    min-height: 520px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+
+    background: var(--bg-soft);
+
+    box-shadow: var(--shadow-md);
+}
+
+.about-page-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(11, 31, 51, 0) 50%,
+            rgba(11, 31, 51, 0.18) 100%
+        );
+
+    pointer-events: none;
+}
+
+.about-page-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+
+    object-fit: cover;
+}
+
+.about-page-stamp {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 190px;
+
+    padding: 22px 28px;
+
+    border-radius: var(--radius-md);
+
+    background: var(--primary);
+
+    border: 1px solid rgba(196, 154, 82, 0.45);
+
+    box-shadow: var(--shadow-md);
+
+    z-index: 2;
+}
+
+.about-page-stamp strong {
+    font-family: var(--font-heading);
+    font-size: 25px;
+    font-weight: 800;
+
+    color: var(--secondary);
+}
+
+.about-page-stamp span {
+    margin-top: 4px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   MISSION & VISION
+   ========================================================= */
+
+.mission-vision {
+    background: var(--bg-light);
+}
+
+.mission-vision .section-heading {
+    margin-bottom: 55px;
+}
+
+.mission-vision-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.mission-card,
+.vision-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 45px 42px 42px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(196, 154, 82, 0.35);
+
+    box-shadow: var(--shadow-md);
+}
+
+.mission-card::before,
+.vision-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--secondary);
+}
+
+.mission-card .mv-number,
+.vision-card .mv-number {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: var(--secondary);
+}
+
+.mission-card h3,
+.vision-card h3 {
+    margin: 0 0 18px;
+
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.mission-card p,
+.vision-card p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   WHAT WE BELIEVE
+   ========================================================= */
+
+.beliefs-section {
+    background: var(--white);
+}
+
+.beliefs-section .section-heading {
+    margin-bottom: 55px;
+}
+
+.beliefs-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.belief-card {
+    position: relative;
+
+    min-height: 285px;
+
+    padding: 35px 28px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    background: var(--white);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.belief-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(196, 154, 82, 0.55);
+
+    box-shadow: var(--shadow-md);
+}
+
+.belief-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 800;
+
+    color: var(--secondary);
+}
+
+.belief-card h3 {
+    margin: 0 0 15px;
+
+    font-family: var(--font-heading);
+    font-size: 21px;
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.belief-card p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   WHY EGYPT
+   ========================================================= */
+
+.why-egypt-section {
+    background: var(--bg-light);
+}
+
+.why-egypt-grid {
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.why-egypt-visual {
+    position: relative;
+
+    padding: 15px 0 35px 15px;
+}
+
+.why-egypt-image {
+    position: relative;
+
+    min-height: 540px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+
+    background: var(--bg-soft);
+
+    box-shadow: var(--shadow-md);
+}
+
+.why-egypt-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    min-height: 540px;
+
+    object-fit: cover;
+}
+
+.why-egypt-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(11, 31, 51, 0) 45%,
+            rgba(11, 31, 51, 0.35) 100%
+        );
+
+    pointer-events: none;
+}
+
+.why-egypt-badge {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 205px;
+
+    padding: 22px 28px;
+
+    border-radius: var(--radius-md);
+
+    background: var(--secondary);
+
+    box-shadow: var(--shadow-md);
+
+    z-index: 2;
+}
+
+.why-egypt-badge strong {
+    font-family: var(--font-heading);
+    font-size: 27px;
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.why-egypt-badge span {
+    margin-top: 3px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+
+    color: var(--primary);
+}
+
+.why-egypt-content {
+    max-width: 650px;
+}
+
+.why-egypt-content h2 {
+    margin: 14px 0 24px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.why-egypt-content h2 span {
+    display: block;
+
+    color: var(--secondary);
+}
+
+.why-egypt-content p {
+    margin: 0 0 18px;
+
+    font-size: 16px;
+    line-height: 1.85;
+
+    color: var(--text-light);
+}
+
+.why-egypt-content .why-egypt-lead {
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--text);
+}
+
+.why-egypt-points {
+    display: grid;
+
+    gap: 0;
+
+    margin-top: 30px;
+
+    border-top: 1px solid var(--border);
+}
+
+.why-egypt-points > div {
+    display: flex;
+    flex-direction: column;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.why-egypt-points strong {
+    margin-bottom: 4px;
+
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.why-egypt-points span {
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   OUR APPROACH
+   ========================================================= */
+
+.approach-section {
+    background: var(--white);
+}
+
+.approach-section .section-heading {
+    margin-bottom: 55px;
+}
+
+.approach-grid {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.approach-grid::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8%;
+    right: 8%;
+    top: 27px;
+
+    height: 1px;
+
+    background: var(--border);
+
+    z-index: 0;
+}
+
+.approach-step {
+    position: relative;
+
+    z-index: 1;
+
+    padding: 0 10px 15px;
+
+    text-align: center;
+}
+
+.approach-step > span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 28px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    border: 5px solid var(--white);
+
+    box-shadow: 0 0 0 1px var(--border);
+
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 800;
+
+    color: var(--secondary);
+}
+
+.approach-step h3 {
+    margin: 0 0 13px;
+
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.approach-step p {
+    max-width: 250px;
+
+    margin: 0 auto;
+
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   ABOUT CTA
+   ========================================================= */
+
+.about-cta {
+    position: relative;
+
+    padding: 95px 0;
+
+    overflow: hidden;
+
+    background: var(--primary);
+}
+
+.about-cta::before {
+    content: "";
+
+    position: absolute;
+
+    top: -180px;
+    right: -180px;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(196, 154, 82, 0.25);
+}
+
+.about-cta::after {
+    content: "";
+
+    position: absolute;
+
+    left: -150px;
+    bottom: -160px;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(196, 154, 82, 0.18);
+}
+
+.about-cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.about-cta-content > span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: var(--secondary);
+}
+
+.about-cta-content h2 {
+    margin: 0 0 20px;
+
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.15;
+    font-weight: 800;
+
+    color: var(--white);
+}
+
+.about-cta-content h2 strong {
+    color: var(--secondary);
+}
+
+.about-cta-content p {
+    max-width: 680px;
+
+    margin: 0 auto 30px;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-page-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .about-page-content {
+        max-width: 100%;
+    }
+
+    .about-page-visual {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .beliefs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-egypt-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .why-egypt-content {
+        max-width: 100%;
+    }
+
+    .why-egypt-visual {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 45px;
+    }
+
+    .approach-grid::before {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .inner-hero {
+        min-height: 500px;
+    }
+
+    .inner-hero-content {
+        padding: 90px 0 75px;
+    }
+
+    .inner-hero h1 {
+        font-size: 44px;
+    }
+
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card,
+    .vision-card {
+        min-height: auto;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .inner-hero {
+        min-height: 470px;
+    }
+
+    .inner-hero-background {
+        background-position: center;
+    }
+
+    .inner-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(7, 21, 33, 0.94),
+                rgba(7, 21, 33, 0.72)
+            );
+    }
+
+    .inner-hero-content {
+        padding: 80px 0 65px;
+    }
+
+    .inner-hero-label {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .inner-hero h1 {
+        font-size: 38px;
+        line-height: 1.12;
+    }
+
+    .inner-hero p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-page-content h2,
+    .why-egypt-content h2 {
+        font-size: 34px;
+    }
+
+    .about-page-image,
+    .about-page-image img {
+        min-height: 400px;
+    }
+
+    .about-page-stamp {
+        right: 10px;
+        bottom: 10px;
+
+        min-width: 165px;
+
+        padding: 17px 21px;
+    }
+
+    .about-page-stamp strong {
+        font-size: 21px;
+    }
+
+    .why-egypt-image,
+    .why-egypt-image img {
+        min-height: 400px;
+    }
+
+    .why-egypt-badge {
+        left: 10px;
+        bottom: 10px;
+
+        min-width: 175px;
+
+        padding: 17px 21px;
+    }
+
+    .why-egypt-badge strong {
+        font-size: 22px;
+    }
+
+    .beliefs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .belief-card {
+        min-height: auto;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .approach-step {
+        padding: 0 15px;
+    }
+
+    .about-cta {
+        padding: 75px 0;
+    }
+
+    .about-cta-content h2 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .inner-hero h1 {
+        font-size: 33px;
+    }
+
+    .inner-hero p {
+        font-size: 14px;
+    }
+
+    .mission-card,
+    .vision-card {
+        padding: 35px 28px;
+    }
+
+    .about-page-image,
+    .about-page-image img,
+    .why-egypt-image,
+    .why-egypt-image img {
+        min-height: 340px;
+    }
+
+    .about-page-stamp,
+    .why-egypt-badge {
+        position: absolute;
+    }
+}
+
